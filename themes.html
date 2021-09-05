@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="usage.html"><strong aria-hidden="true">2.</strong> Usage</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">3.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="themes.html" class="active"><strong aria-hidden="true">3.1.</strong> Themes</a></li><li class="chapter-item expanded "><a href="keymap.html"><strong aria-hidden="true">3.2.</strong> Keymap</a></li><li class="chapter-item expanded "><a href="remapping.html"><strong aria-hidden="true">3.3.</strong> Key Remapping</a></li><li class="chapter-item expanded "><a href="hooks.html"><strong aria-hidden="true">3.4.</strong> Hooks</a></li></ol></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="usage.html"><strong aria-hidden="true">2.</strong> Usage</a></li><li class="chapter-item expanded "><a href="from-vim.html"><strong aria-hidden="true">3.</strong> Migrating from Vim</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">4.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="themes.html" class="active"><strong aria-hidden="true">4.1.</strong> Themes</a></li><li class="chapter-item expanded "><a href="keymap.html"><strong aria-hidden="true">4.2.</strong> Keymap</a></li><li class="chapter-item expanded "><a href="remapping.html"><strong aria-hidden="true">4.3.</strong> Key Remapping</a></li><li class="chapter-item expanded "><a href="hooks.html"><strong aria-hidden="true">4.4.</strong> Hooks</a></li></ol></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -218,6 +218,9 @@
 <tr><td><code>ui.help</code></td><td></td></tr>
 <tr><td><code>ui.text</code></td><td></td></tr>
 <tr><td><code>ui.text.focus</code></td><td></td></tr>
+<tr><td><code>ui.info</code></td><td></td></tr>
+<tr><td><code>ui.info.text</code></td><td></td></tr>
+<tr><td><code>ui.menu</code></td><td></td></tr>
 <tr><td><code>ui.menu.selected</code></td><td></td></tr>
 <tr><td><code>ui.selection</code></td><td>For selections in the editing area</td></tr>
 <tr><td><code>ui.selection.primary</code></td><td></td></tr>
@@ -241,6 +244,27 @@ black = &quot;#000000&quot;
 </code></pre>
 <p>Remember that the <code>[palette]</code> table includes all keys after its header,
 so you should define the palette after normal theme options.</p>
+<p>The default palette uses the terminal's default 16 colors, and the colors names
+are listed below. The <code>[palette]</code> section in the config file takes precedence
+over it and is merged into the default palette.</p>
+<table><thead><tr><th>Color Name</th></tr></thead><tbody>
+<tr><td><code>black</code></td></tr>
+<tr><td><code>red</code></td></tr>
+<tr><td><code>green</code></td></tr>
+<tr><td><code>yellow</code></td></tr>
+<tr><td><code>blue</code></td></tr>
+<tr><td><code>magenta</code></td></tr>
+<tr><td><code>cyan</code></td></tr>
+<tr><td><code>gray</code></td></tr>
+<tr><td><code>light-red</code></td></tr>
+<tr><td><code>light-green</code></td></tr>
+<tr><td><code>light-yellow</code></td></tr>
+<tr><td><code>light-blue</code></td></tr>
+<tr><td><code>light-magenta</code></td></tr>
+<tr><td><code>light-cyan</code></td></tr>
+<tr><td><code>light-gray</code></td></tr>
+<tr><td><code>white</code></td></tr>
+</tbody></table>
 
                     </main>
 
